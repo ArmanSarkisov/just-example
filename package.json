@@ -1,0 +1,15 @@
+{
+  "name": "warehouse",
+  "version": "1.0.0",
+  "author": "arman.sarkisov.96@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "concurrently npm:watch:*",
+    "watch:client": "cd warehouse-client && yarn dev",
+    "watch:api": "cd warehouse-api-main && yarn start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
